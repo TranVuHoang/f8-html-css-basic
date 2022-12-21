@@ -1,0 +1,17 @@
+/* biến trong css */
+:root {
+    /* tạo biến toàn cục(global): --text-color */
+    --text-color: violet;
+}
+h1 {
+    /* biến cục bộ --my-color */
+    --my-color: green;
+    color: var(--my-color);
+}
+h2 {
+    /* không gọi được biến cục bộ(local) --my-color */
+    color: var(--my-color);
+}
+h3 {
+    color: var(--text-color);
+}
